@@ -74,12 +74,12 @@
 @media(max-width:880px){
     .page{
         flex-direction: column-reverse;
-        height: 90vh;
+        height: 80vh;
     }
     .page .right{
         flex: 1;
         display: block;
-        position: relative  ;
+        position: relative;
     }
     .page .right img{
         position: absolute;
@@ -89,6 +89,9 @@
     }
     .page .left{
         flex: 4;
+        
+        padding-top: 15vh !important;
+        /* justify-content: space-around; */
     }
 }
 @media(max-width:600px){
@@ -97,7 +100,6 @@
     }
     .page .left{
         padding: 1rem;
-        justify-content: flex-end;
     }
     .page .left h1{
         font-size: 2.8rem;
