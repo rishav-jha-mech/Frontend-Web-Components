@@ -1,0 +1,143 @@
+.page{
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    background-blend-mode: color;
+    padding: 0 9%;
+    /* background-color: rgba(0, 0, 0, 0.24); */
+}
+.page .left, .page .right{
+    flex: 1 1;
+}
+.page .left{
+    background-color: rgba(255, 30, 161, 0.219);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.page p,h1,h5{
+    z-index: 10;
+}
+.page .left p{
+    font-size: 1rem;
+    letter-spacing: 0.08rem;
+    color: #11b8dd;
+    font-weight: 600;
+}
+.page .left h1{
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #333;
+    line-height: 4rem;
+    margin-bottom: 1.5rem;
+}
+.page .left h5{
+    font-size: 1.2rem;
+    color: #444;
+    font-weight: 600;
+    line-height: 2.1rem;
+}
+.page .left .btn-container a{
+    padding: 12px 20px;
+    background-color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 6px;
+    color: #11b8dd;
+    letter-spacing: 0.05rem;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.06);
+}
+.page .left .btn-container a:nth-child(1){
+    background-color: #fff;
+    border: 1.5px solid #11b8dd;
+    margin-right: 1.5rem;
+}
+.page .left .btn-container a:nth-child(2){
+    background-color: #11b8dd;
+    color: white;
+    border: 1.5px solid transparent;
+}
+
+
+/* Responsive Portion */
+
+@media(max-width:1090px){
+    .page{
+        padding: 0 5%;
+    }
+}
+@media(max-width:970px){
+    .page{
+        padding: 0 1%;
+    }
+}
+@media(max-width:880px){
+    .page{
+        flex-direction: column-reverse;
+        height: 110vh;
+    }
+    .page .right{
+        flex: 1;
+        display: block;
+        position: relative  ;
+    }
+    .page .right img{
+        position: absolute;
+        float: right;
+        right: 2rem;
+        top: 3rem;
+    }
+    .page .left{
+        flex: 4;
+    }
+}
+@media(max-width:600px){
+    .page{
+        padding: 0;
+    }
+    .page .left{
+        padding: 1rem;
+    }
+    .page .left h1{
+        font-size: 2.8rem;
+    }
+    .page .left h5{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .page .right img{
+        transform: scale(1);
+        width:  250px;
+        height: 220px;
+    }
+}
+@media(max-width:440px){
+    .page .right img{
+        top: 2rem;   
+    }
+    .page .left h1{
+        font-size: 2.2rem;
+        line-height: 3rem;
+        margin-bottom: 1rem;
+    }
+    .page .left .btn-container a{
+        padding: 8px 16px;
+        letter-spacing: normal;
+    }
+}
+@media(max-width:340px){
+    .page .left{
+        padding: 0 0.5rem;
+    }
+}
+/* Responsive Portion */
+
+.page .right{
+    background-color: rgba(51, 255, 0, 0.432);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page .right img{
+    transform: scale(1.2);
+}

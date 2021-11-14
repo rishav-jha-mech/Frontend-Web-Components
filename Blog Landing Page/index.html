@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Rishav Jha">
+    <meta name="description" content="Freya - The Blogging Website's landing page made with Bootstrap & Vanilla CSS.">
+    <meta name="theme-color" content="#333">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="page1.css">
+    <link rel="stylesheet" href="page2.css">
+    <title>Landing Page for Freya</title>
+  </head>
+  <body>
+
+    <a class="ham" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+        <i class="fa fa-bars"></i>
+    </a>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Freya's Navbar</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div style="font-size: 1.2rem;">
+            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+            <br>
+            <strong>
+                <p> 
+                    By the way this is offcanvas from Bootstrap.
+                </p>
+                <p>
+                    I have not made the navbar here cuz its ready in the original project
+                </p>
+                <p>
+                    The background colors used here will not be implemented in the real project, their role was to help with css positioning.
+                </p>
+                <br>
+                <br>
+                <p>
+                    The Texts here are taken from Medium.com and The illustrations are from the ppts from Carnival.com
+                </p>
+            </strong>
+          </div>
+        </div>
+    </div>
+
+    <div class="main">
+
+        <div class="page">
+            <div class="left">
+                <p class="my-0">Welcome to Freya</p>
+                <h1>World's most used <span class="d-block"> Blogging website. </span> </h1>
+                <h5>Freya is a place to write, read, and connect. It's easy and free to post your thinking on any topic and connect with millions of readers.</h5>
+                <div class="btn-container mx-1 mt-4">
+                    <a href="">Read Blogs</a>
+                    <a href="">Start Writing</a>
+                </div>
+            </div>
+            <div class="right">
+                <img src="./pngs/Picture8.png" alt="">
+            </div>
+        </div>
+        
+        <div class="page2">
+            <div class="left">
+                <img src="./pngs//Picture11.png" alt="">
+            </div>
+            <div class="right">
+                <h1>A living network of curious minds.</h1>
+                <h5>Anyone can write on Freya. Thought-leaders, journalists, experts, and individuals with unique perspectives share their thinking here. You’ll find pieces by independent writers from around the globe, stories we feature and leading authors, and smart takes on our own suite of blogs and publications.</h5>
+            </div>
+        </div>
+
+        
+        <div class="page2">
+            <div class="right" style="background: rgba(255, 81, 1, 0.2);">
+                <h1>Create the space for your thinking to take off.</h1>
+                <h5>A blank page is also a door. At Medium you can walk through it. It's easy and free to share your thinking on any topic, connect with an audience, express yourself with a range of publishing tools, and even earn money for your work.</h5>
+            </div>
+            <div class="left" style="background: rgba(0, 119, 255, 0.267);">
+                <img src="./pngs/Picture2.png" alt="">
+            </div>
+        </div>
+
+        
+        <div class="page2">
+            <div class="right" style="background: rgba(160, 255, 7, 0.226);">
+                <h1 class="text-left">Take Freya with you.</h1>
+                <h5>Download our app so you can read, write, and publish wherever you are.</h5>
+                <div id="downloadFreya" class="my-4 d-flex justify-content-center align-center">
+                    <a class="me-4" href="/"><img src="./pngs/AppleStore_2x.png" alt=""></a>
+                    <a class="" href="/"><img src="./pngs/PlayStore_2x.png"  alt=""></a>
+                </div>
+            </div>
+            <div class="left" style="background: rgba(255, 0, 200, 0.267);">
+                <img id="iphone" src="./pngs/iphone.png" alt="">
+            </div>
+        </div>
+
+    </div>
+
+  </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</html>

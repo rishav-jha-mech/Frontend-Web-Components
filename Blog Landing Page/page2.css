@@ -1,0 +1,135 @@
+.page2{
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 9%;
+    margin-bottom: 0.5rem;
+}
+
+.page2 .left, .page2 .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page2 .left{
+    width: 40%;
+    background-color: #ff56;
+}
+
+.page2 .left img{
+    transform: scale(1.2);
+}
+
+
+.page2 .right{
+    width: 60%;
+    background-color: #ddf;
+    flex-direction: column;
+}
+.page2 .right h1{
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #333;
+    line-height: 4rem;
+    margin-bottom: 1.5rem;
+}
+.page2 .right h5{
+    font-size: 1.2rem;
+    color: #444;
+    font-weight: 600;
+    line-height: 2.1rem;
+}
+
+
+
+
+
+
+/* Responsive Portion */
+
+@media(max-width:1090px){
+    .page2{
+        padding: 0 5%;
+        height: 90vh;
+    }
+}
+@media(max-width:970px){
+    .page2{
+        padding: 0 1%;
+    }
+}
+@media(max-width:880px){
+    .page2{
+        flex-direction: column;
+    }
+    .page2 .left,.page2 .right{width: 100%;flex: 1 1;align-items: center;}
+}
+@media(max-width:600px){
+    .page2{
+        padding: 0;
+    }
+    .page2 .left img{
+        transform: scale(1);
+    }
+    .page2 .right{
+        padding: 1rem;
+    }
+    .page2 .right h1{
+        font-size: 2.8rem;
+    }
+    .page2 .right h5{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}
+@media(max-width:440px){
+    .page2 .right h1{
+        font-size: 2.2rem;
+        line-height: 3rem;
+        margin-bottom: 1rem;
+    }
+}
+
+#iphone{
+    transform: scale(1) !important;
+    width: 70%;
+}
+#downloadFreya a img{
+    width: 200px;
+}
+@media(max-width:450px){
+    #downloadFreya a img{
+        width: 140px;
+    }
+}
+
+.ham{
+    font-size: 2.5rem;
+    position: absolute;
+    right: 10%;
+    padding: 0.5rem 0.9rem;
+    border-radius: 0.3rem;
+    color: #444;
+    background: rgba(255, 255, 255, 0.288);
+    border: 0.1rem solid #444;
+    margin-top: 0.2rem;
+    margin-right: 0.4rem;
+}
+
+@media(max-width:1090px){
+    .ham{
+        right: 5%;
+    }
+}
+@media(max-width:970px){
+    .ham{
+        right: 1%;
+    }
+}
+@media(max-width:600px){
+    .ham{
+        font-size: 1.8rem;
+        padding: 0.5rem 0.8rem;
+    }
+}
