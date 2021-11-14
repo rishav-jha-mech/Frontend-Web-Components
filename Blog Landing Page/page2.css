@@ -143,6 +143,7 @@
     border: 0.1rem solid #444;
     top: 2%;
     margin-right: 0.4rem;
+    z-index: 10;
 }
 
 @media(max-width:1090px){
