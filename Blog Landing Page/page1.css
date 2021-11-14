@@ -113,7 +113,7 @@
 }
 @media(max-width:440px){
     .page .right img{
-        top: 2rem;   
+        top: 4rem;
     }
     .page .left h1{
         font-size: 2.2rem;
