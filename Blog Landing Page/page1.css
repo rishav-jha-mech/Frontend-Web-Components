@@ -74,10 +74,11 @@
 @media(max-width:880px){
     .page{
         flex-direction: column-reverse;
-        height: 80vh;
+        height: 85vh;
+        min-height: 792px;
     }
     .page .right{
-        flex: 1;
+        flex: 1;                                
         display: block;
         position: relative;
     }
@@ -90,7 +91,7 @@
     .page .left{
         flex: 4;
         
-        padding-top: 15vh !important;
+        padding-top: 18vh !important;
         /* justify-content: space-around; */
     }
 }
@@ -113,15 +114,25 @@
         width:  250px;
         height: 220px;
     }
+    .page .right{
+        min-height: 106px;
+    }
+    .page .left{
+        min-height: 586px;
+    }
 }
 @media(max-width:440px){
     .page .right img{
-        top: 4rem;
+        top: 4.5rem;
     }
     .page .left h1{
         font-size: 2.2rem;
         line-height: 3rem;
         margin-bottom: 1rem;
+    }
+    .page .left h5{
+        font-size: 1.1rem;
+        line-height: 30px;
     }
     .page .left .btn-container a{
         padding: 10px 20px;
@@ -144,3 +155,9 @@
 .page .right img{
     transform: scale(1.2);
 }
+
+/*
+    Every device has a different viewport height and sadly you vh unit wothelp you there thats
+    where our age old px come in we have to set a min height in px which is not realtive by any means
+    so that the website looks thee same accross all devices
+*/
