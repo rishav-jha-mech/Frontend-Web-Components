@@ -67,6 +67,8 @@
     #colnorm{
         flex-direction: column-reverse;
     }
+    #colnorm .left{
+    }
     .page2 .left,.page2 .right{
         width: 100%;
     }
@@ -97,7 +99,7 @@
     }
     .page2 .right{
         padding: 1rem;
-        padding-top: 10vh;
+        padding-top: 15vh;
     }
     .page2 .right h1{
         font-size: 2.8rem;
@@ -129,6 +131,9 @@
 @media(max-width:450px){
     #downloadFreya a img{
         width: 140px;
+    }
+    #iphone{
+        width: 85%;
     }
 }
 
