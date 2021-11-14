@@ -13,7 +13,7 @@
 
 .page2 .left{
     width: 40%;
-    background-color: #ff56;
+    /* background-color: #ff56; */
 }
 
 .page2 .left img{
@@ -23,7 +23,7 @@
 
 .page2 .right{
     width: 60%;
-    background-color: #ff56;
+    /* background-color: #ff56; */
     flex-direction: column;
 }
 .page2 .right h1{
