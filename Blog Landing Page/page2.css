@@ -1,5 +1,5 @@
 .page2{
-    height: 100vh;
+    height: 78vh;
     display: flex;
     justify-content: space-between;
     padding: 0 9%;
@@ -13,7 +13,6 @@
 
 .page2 .left{
     width: 40%;
-    background-color: #ff56;
 }
 
 .page2 .left img{
@@ -23,7 +22,6 @@
 
 .page2 .right{
     width: 60%;
-    background-color: #ff56;
     flex-direction: column;
 }
 .page2 .right h1{
@@ -66,8 +64,6 @@
     }
     #colnorm{
         flex-direction: column-reverse;
-    }
-    #colnorm .left{
     }
     .page2 .left,.page2 .right{
         width: 100%;
@@ -166,4 +162,12 @@
         font-size: 1.8rem;
         padding: 0.5rem 0.8rem;
     }
+}
+
+.theme-color{
+    color: #11b8dd !important;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.14);
+}
+.indahead{
+    text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.089) !important;
 }
